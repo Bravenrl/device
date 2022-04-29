@@ -1,50 +1,3 @@
-const menuButton = document.querySelector(".header-catalog");
-const menu = document.querySelector(".catalog-list");
-const serviceButtonWrappers = document.querySelectorAll('.service-button-wrapper');
-const serviceButtons = document.querySelectorAll('.service-button');
-const serviceItems = document.querySelectorAll('.service-item');
-
-
-serviceButtons.forEach((button, index) => {
-  button.addEventListener('click', ()=>{
-    if (button.classList.contains('service-button--active')) {
-      return;
-    }
-
-    serviceButtonWrappers.forEach((item, wrapindex) => {
-      if (index === wrapindex) {
-        return;
-      }
-      item.classList.remove('service-button--active');
-    })
-
-    serviceButtons.forEach((item, btnindex) => {
-      if (index === btnindex) {
-        return;
-      }
-      item.classList.remove('service-button--active');
-    })
-
-    serviceItems.forEach((item, itemindex) => {
-      if (index === itemindex) {
-        return;
-      }
-      item.classList.remove('service-item--active');
-    })
-
-    button.classList.add('service-button--active');
-    serviceButtonWrappers[index].classList.add('service-button--active');
-    serviceItems[index].classList.add('service-item--active')
-  })
-})
-
-menuButton.childNodes.forEach((child) => {
-  child.addEventListener("click", () => {
-    menu.classList.toggle("catalog-list--active");
-    menuButton.classList.toggle("header-catalog--active");
-  });
-});
-
 class Slider {
   constructor() {
     this.sliderElements = document.querySelectorAll(".main-slider-item");
@@ -78,8 +31,12 @@ class Slider {
   }
 
   _changeControl() {
-    this.sliderControls[this.prevElement].classList.remove("slider-control--active");
-    this.sliderControls[this.currentElement].classList.add("slider-control--active");
+    this.sliderControls[this.prevElement].classList.remove(
+      "slider-control--active"
+    );
+    this.sliderControls[this.currentElement].classList.add(
+      "slider-control--active"
+    );
   }
 
   _changeSlide() {

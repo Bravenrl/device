@@ -365,10 +365,10 @@
             <br />
             проверить работоспособность покупки. Всякое бывает.
           </p>
-          <div class="info-map-wrapper">
+          <button class="info-map-button">
             <img src="/img/map.png" width="560" height="222" alt="Карта" />
-          </div>
-          <button class="info-button button" href="#">напишите нам</button>
+          </button>
+          <button class="info-button button feedback-button" href="#">напишите нам</button>
         </div>
       </section>
     </main>
@@ -470,9 +470,10 @@
       </div>
     </footer>
 
-    <section class="callback-modal modal">
+    <section class="modal feedback-modal"  tabindex="-1">
+    <div class="modal-content">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form class="callback-form">
+      <form class="feedback-form">
       <p>
         <label for="name-name">Ваше имя: </label>
         <input class = "name-input text" type="text" id='name-name' name="name" placeholder="Имя Фамилия" required/>
@@ -483,22 +484,31 @@
       </p>
         <label for="text-text">Текст письма:</label>
         <textarea class= "text" type="text" id='text-text' name="text" minlength="10" required placeholder="Напишите сообщение не менее 10 символов"></textarea>
-        <button class="callback-submit-button button" type="submit">
+        <button class="feedback-submit-button button" type="submit">
           отправить
         </button>
       </form>
-      <button class="modal-close-button" type="button" aria-label="Закрыть"></button>
-    </section>
+      <button class="modal-close-button feedback-close-btn" type="button" aria-label="Закрыть"></button>
+    </div>
+  </section>
 
-    <!-- <section class="map-modal modal visually-hidden">
-      <h3>Карта</h3>
+    <section class="modal map-modal" tabindex="-1">
+    <div class="modal-content">
+      <h3 class="visually-hidden">Карта</h3>
       <iframe
-        src="https://yandex.ru/map-widget/v1/-/CCUBjChlGD"
+        src="https://yandex.ru/map-widget/v1/-/CCUFy8fNwA"
+        frameborder="1"
+        allowfullscreen="true"
         width="960"
         height="562"
       ></iframe>
-      <button class="modal-close-button" type="button">Закрыть</button>
-    </section> -->
-    <script src="src/main.js"></script>
+      <button class="modal-close-button map-close-btn" type="button" aria-label="Закрыть"></button>
+    </div>
+  </section>
+
+    <script src="src/menu.js"></script>
+    <script src="src/modal.js"></script>
+    <script src="src/slider.js"></script>
+    <script src="src/service-btn.js"></script>
   </body>
 </html>
