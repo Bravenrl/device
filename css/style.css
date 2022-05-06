@@ -545,28 +545,28 @@ img {
   background-position: center;
 }
 .popular-1::before {
-   background-image: url(/img/popular-1.png);
+   background-image: url(img/popular-1.png);
  }
 
 .popular-2::before {
-  background-image: url(/img/popular-2.png);
+  background-image: url(img/popular-2.png);
   background-position: bottom;
 }
 
 .popular-3::before {
-  background-image: url(/img/popular-3.png);
+  background-image: url(img/popular-3.png);
 }
 
 .popular-4::before {
-  background-image: url(/img/popular-4.png);
+  background-image: url(img/popular-4.png);
 }
 
 .popular-5::before {
-  background-image: url(/img/popular-5.png);
+  background-image: url(img/popular-5.png);
 }
 
 .popular-6::before {
-  background-image: url(/img/popular-6.png);
+  background-image: url(img/popular-6.png);
 }
 
 .popular-list h3 {
@@ -661,19 +661,19 @@ img {
 }
 
 .warranty::before {
-  background-image: url(/img/warranty.png);
+  background-image: url(img/warranty.png);
   width: 171px;
   height: 195px;
 }
 
 .credit::before {
-  background-image: url(/img/credit.png);
+  background-image: url(img/credit.png);
   width: 156px;
   height: 188px;
 }
 
 .delivery::before {
-  background-image: url(/img/delivery.png);
+  background-image: url(img/delivery.png);
   width: 136px;
   height: 164px;
 }
