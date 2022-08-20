@@ -661,19 +661,19 @@ img {
 }
 
 .warranty::before {
-  background-image: url(img/warranty.png);
+  background-image: url('../img/warranty.png');
   width: 171px;
   height: 195px;
 }
 
 .credit::before {
-  background-image: url(img/credit.png);
+  background-image: url('../img/credit.png');
   width: 156px;
   height: 188px;
 }
 
 .delivery::before {
-  background-image: url(img/delivery.png);
+  background-image: url('../img/delivery.png');
   width: 136px;
   height: 164px;
 }
